@@ -100,9 +100,9 @@ export default function App() {
           <div className="suggested-queries">
             <h3>SUGGESTED QUERIES</h3>
             {[
-              "Show verse 1.5",
+              "I have low knowledge",
               "Give me a verse about hope",
-              "I feel inadequate and weak",
+              "I feel low energytic",
               "Guidance for a new task"
             ].map((query, i) => (
               <button 
