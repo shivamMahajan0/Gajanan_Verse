@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: gajanan-maharaj-ai-guide
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: CHROMA_DB_DIR
+        value: ./chroma_db
+      - key: CHROMA_COLLECTION_NAME
+        value: gajanan_verses
+      - key: DEBUG
+        value: "False"

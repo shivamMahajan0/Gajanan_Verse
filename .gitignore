@@ -1,0 +1,102 @@
+# =========================
+# Python
+# =========================
+gajanan_vijay_master.json
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+.venv312/
+env/
+ENV/
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# ChromaDB / Vector Database
+# =========================
+
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Node / React
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build files
+dist/
+build/
+.vite/
+
+# =========================
+# React environment files
+# =========================
+frontend_react/.env
+frontend_react/.env.*
+!frontend_react/.env.example
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+*.bak
+
+# =========================
+# Python packaging
+# =========================
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Large generated data
+# =========================
+*.parquet
+*.pkl
+*.pickle
+
+# =========================
+# Local vector/data files
+# =========================
+data/
