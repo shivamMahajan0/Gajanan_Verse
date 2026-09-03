@@ -37,7 +37,7 @@ COPY --from=frontend-builder /app/frontend_react/dist ./frontend_react/dist
 EXPOSE 8000
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3 \
-    CMD curl -f "http://localhost:${PORT:-8000}/" || exit 1
+    CMD curl -f "https://gajanan-verse-ptlh.onrender.com/" || exit 1
 
 # Render (and most PaaS) inject $PORT at runtime; default to 8000 for local docker run
 CMD ["sh", "-c", "uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
